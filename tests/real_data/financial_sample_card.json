@@ -1,0 +1,457 @@
+{
+  "table_id": "financial_sample",
+  "source_file": "financial_sample.xlsx",
+  "source_sheet": "Sheet1",
+  "source_range": "A1:P701",
+  "ingestion_date": "2026-02-25",
+  "row_count": 700,
+  "column_count": 16,
+  "columns": [
+    {
+      "name": "Segment",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Government",
+        "Midmarket",
+        "Channel Partners",
+        "Enterprise",
+        "Small Business"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Government",
+        "Midmarket",
+        "Channel Partners",
+        "Enterprise",
+        "Small Business"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Country",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Canada",
+        "Germany",
+        "France",
+        "Mexico",
+        "United States of America"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Canada",
+        "Germany",
+        "France",
+        "Mexico",
+        "United States of America"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Product",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Carretera",
+        "Montana",
+        "Paseo",
+        "Velo",
+        "VTT",
+        "Amarilla"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Carretera",
+        "Montana",
+        "Paseo",
+        "Velo",
+        "VTT",
+        "Amarilla"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Discount Band",
+      "data_type": "STRING",
+      "unique_values": 4,
+      "sample_values": [
+        "None",
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "None",
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": [
+        "Contains placeholder values: None"
+      ]
+    },
+    {
+      "name": "Units Sold",
+      "data_type": "FLOAT",
+      "unique_values": 510,
+      "sample_values": [
+        "1618.5",
+        "1321.0",
+        "2178.0",
+        "888.0",
+        "2470.0",
+        "1513.0",
+        "921.0",
+        "2518.0",
+        "1899.0",
+        "1545.0"
+      ],
+      "null_count": 0,
+      "all_values": null,
+      "min_value": 200.0,
+      "max_value": 4492.5,
+      "mean_value": 1608.2942857142857,
+      "format_warnings": null
+    },
+    {
+      "name": "Manufacturing Price",
+      "data_type": "INTEGER",
+      "unique_values": 6,
+      "sample_values": [
+        "3",
+        "5",
+        "10",
+        "120",
+        "250",
+        "260"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "3",
+        "5",
+        "10",
+        "120",
+        "250",
+        "260"
+      ],
+      "min_value": 3.0,
+      "max_value": 260.0,
+      "mean_value": 96.47714285714285,
+      "format_warnings": null
+    },
+    {
+      "name": "Sale Price",
+      "data_type": "INTEGER",
+      "unique_values": 7,
+      "sample_values": [
+        "20",
+        "15",
+        "350",
+        "12",
+        "125",
+        "300",
+        "7"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "20",
+        "15",
+        "350",
+        "12",
+        "125",
+        "300",
+        "7"
+      ],
+      "min_value": 7.0,
+      "max_value": 350.0,
+      "mean_value": 118.42857142857143,
+      "format_warnings": null
+    },
+    {
+      "name": "Gross Sales",
+      "data_type": "FLOAT",
+      "unique_values": 550,
+      "sample_values": [
+        "32370.0",
+        "26420.0",
+        "32670.0",
+        "13320.0",
+        "37050.0",
+        "529550.0",
+        "13815.0",
+        "30216.0",
+        "37980.0",
+        "18540.0"
+      ],
+      "null_count": 0,
+      "all_values": null,
+      "min_value": 1799.0,
+      "max_value": 1207500.0,
+      "mean_value": 182759.42642857143,
+      "format_warnings": null
+    },
+    {
+      "name": "Discounts",
+      "data_type": "FLOAT",
+      "unique_values": 515,
+      "sample_values": [
+        "0.0",
+        "276.15",
+        "344.4",
+        "72.1",
+        "44.73",
+        "92.82",
+        "222.96",
+        "4235.0",
+        "177.03",
+        "173.4"
+      ],
+      "null_count": 0,
+      "all_values": null,
+      "min_value": 0.0,
+      "max_value": 149677.5,
+      "mean_value": 13150.35462857143,
+      "format_warnings": null
+    },
+    {
+      "name": " Sales",
+      "data_type": "FLOAT",
+      "unique_values": 559,
+      "sample_values": [
+        "32370.0",
+        "26420.0",
+        "32670.0",
+        "13320.0",
+        "37050.0",
+        "529550.0",
+        "13815.0",
+        "30216.0",
+        "37980.0",
+        "18540.0"
+      ],
+      "null_count": 0,
+      "all_values": null,
+      "min_value": 1655.08,
+      "max_value": 1159200.0,
+      "mean_value": 169609.07179999998,
+      "format_warnings": null
+    },
+    {
+      "name": "COGS",
+      "data_type": "FLOAT",
+      "unique_values": 545,
+      "sample_values": [
+        "16185.0",
+        "13210.0",
+        "21780.0",
+        "8880.0",
+        "24700.0",
+        "393380.0",
+        "9210.0",
+        "7554.0",
+        "18990.0",
+        "4635.0"
+      ],
+      "null_count": 0,
+      "all_values": null,
+      "min_value": 918.0,
+      "max_value": 950625.0,
+      "mean_value": 145475.21142857143,
+      "format_warnings": null
+    },
+    {
+      "name": "Profit",
+      "data_type": "FLOAT",
+      "unique_values": 557,
+      "sample_values": [
+        "16185.0",
+        "13210.0",
+        "10890.0",
+        "4440.0",
+        "12350.0",
+        "136170.0",
+        "4605.0",
+        "22662.0",
+        "18990.0",
+        "13905.0"
+      ],
+      "null_count": 0,
+      "all_values": null,
+      "min_value": -40617.5,
+      "max_value": 262200.0,
+      "mean_value": 24133.860371428567,
+      "format_warnings": null
+    },
+    {
+      "name": "Date",
+      "data_type": "DATE",
+      "unique_values": 16,
+      "sample_values": [
+        "2014-01-01 00:00:00",
+        "2014-06-01 00:00:00",
+        "2014-12-01 00:00:00",
+        "2014-03-01 00:00:00",
+        "2014-07-01 00:00:00",
+        "2014-08-01 00:00:00",
+        "2014-09-01 00:00:00",
+        "2013-10-01 00:00:00",
+        "2014-02-01 00:00:00",
+        "2013-09-01 00:00:00",
+        "2014-10-01 00:00:00",
+        "2013-11-01 00:00:00",
+        "2013-12-01 00:00:00",
+        "2014-04-01 00:00:00",
+        "2014-05-01 00:00:00",
+        "2014-11-01 00:00:00"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "2014-01-01 00:00:00",
+        "2014-06-01 00:00:00",
+        "2014-12-01 00:00:00",
+        "2014-03-01 00:00:00",
+        "2014-07-01 00:00:00",
+        "2014-08-01 00:00:00",
+        "2014-09-01 00:00:00",
+        "2013-10-01 00:00:00",
+        "2014-02-01 00:00:00",
+        "2013-09-01 00:00:00",
+        "2014-10-01 00:00:00",
+        "2013-11-01 00:00:00",
+        "2013-12-01 00:00:00",
+        "2014-04-01 00:00:00",
+        "2014-05-01 00:00:00",
+        "2014-11-01 00:00:00"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Month Number",
+      "data_type": "INTEGER",
+      "unique_values": 12,
+      "sample_values": [
+        "1",
+        "6",
+        "12",
+        "3",
+        "7",
+        "8",
+        "9",
+        "10",
+        "2",
+        "11",
+        "4",
+        "5"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "1",
+        "6",
+        "12",
+        "3",
+        "7",
+        "8",
+        "9",
+        "10",
+        "2",
+        "11",
+        "4",
+        "5"
+      ],
+      "min_value": 1.0,
+      "max_value": 12.0,
+      "mean_value": 7.9,
+      "format_warnings": null
+    },
+    {
+      "name": "Month Name",
+      "data_type": "STRING",
+      "unique_values": 12,
+      "sample_values": [
+        "January",
+        "June",
+        "December",
+        "March",
+        "July",
+        "August",
+        "September",
+        "October",
+        "February",
+        "November",
+        "April",
+        "May"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "January",
+        "June",
+        "December",
+        "March",
+        "July",
+        "August",
+        "September",
+        "October",
+        "February",
+        "November",
+        "April",
+        "May"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Year",
+      "data_type": "INTEGER",
+      "unique_values": 2,
+      "sample_values": [
+        "2014",
+        "2013"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "2014",
+        "2013"
+      ],
+      "min_value": 2013.0,
+      "max_value": 2014.0,
+      "mean_value": 2013.75,
+      "format_warnings": null
+    }
+  ],
+  "description": "Description not generated (LLM skipped)",
+  "purpose": "Purpose not generated (LLM skipped)",
+  "caveats": "Caveats not analyzed (LLM skipped)",
+  "entities": [],
+  "cross_references": [],
+  "query_patterns": [],
+  "tags_initial": [],
+  "usage_log": [],
+  "tags_learned": [],
+  "query_success_rate": 0.0,
+  "user_satisfaction_rate": 0.0,
+  "total_queries": 0,
+  "learned_mappings": [],
+  "confirmed_relationships": [],
+  "s3_parquet_path": "data/processed/financial_sample/financial_sample.parquet",
+  "s3_card_path": "data/metadata/financial_sample/card.json"
+}

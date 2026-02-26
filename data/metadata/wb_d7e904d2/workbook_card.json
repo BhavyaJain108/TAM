@@ -1,0 +1,148 @@
+{
+  "workbook_id": "wb_d7e904d2",
+  "source_file": "test_multi_table.xlsx",
+  "ingestion_date": "2026-02-25",
+  "total_sheets": 3,
+  "sheets_ingested": 3,
+  "sheets_skipped": 0,
+  "sheets": [
+    {
+      "sheet_name": "Clients",
+      "table_id": "wb_d7e904d2_clients",
+      "data_range": "A1:E6",
+      "row_count": 5,
+      "column_count": 5,
+      "was_ingested": true,
+      "skip_reason": null,
+      "primary_entity": null,
+      "description_summary": "Sheet 'Clients' from test_multi_table.xlsx"
+    },
+    {
+      "sheet_name": "Deals",
+      "table_id": "wb_d7e904d2_deals",
+      "data_range": "A1:F7",
+      "row_count": 6,
+      "column_count": 6,
+      "was_ingested": true,
+      "skip_reason": null,
+      "primary_entity": null,
+      "description_summary": "Sheet 'Deals' from test_multi_table.xlsx"
+    },
+    {
+      "sheet_name": "Contacts",
+      "table_id": "wb_d7e904d2_contacts",
+      "data_range": "A1:F7",
+      "row_count": 6,
+      "column_count": 6,
+      "was_ingested": true,
+      "skip_reason": null,
+      "primary_entity": null,
+      "description_summary": "Sheet 'Contacts' from test_multi_table.xlsx"
+    }
+  ],
+  "cross_sheet_relationships": [
+    {
+      "source_sheet": "Clients",
+      "source_table_id": "wb_d7e904d2_clients",
+      "source_column": "column_1",
+      "target_sheet": "Deals",
+      "target_table_id": "wb_d7e904d2_deals",
+      "target_column": "column_1",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_1"
+    },
+    {
+      "source_sheet": "Clients",
+      "source_table_id": "wb_d7e904d2_clients",
+      "source_column": "column_3",
+      "target_sheet": "Deals",
+      "target_table_id": "wb_d7e904d2_deals",
+      "target_column": "column_3",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_3"
+    },
+    {
+      "source_sheet": "Clients",
+      "source_table_id": "wb_d7e904d2_clients",
+      "source_column": "column_1",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_1",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_1"
+    },
+    {
+      "source_sheet": "Clients",
+      "source_table_id": "wb_d7e904d2_clients",
+      "source_column": "column_3",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_3",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_3"
+    },
+    {
+      "source_sheet": "Deals",
+      "source_table_id": "wb_d7e904d2_deals",
+      "source_column": "column_1",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_1",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_1"
+    },
+    {
+      "source_sheet": "Deals",
+      "source_table_id": "wb_d7e904d2_deals",
+      "source_column": "column_2",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_2",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_2"
+    },
+    {
+      "source_sheet": "Deals",
+      "source_table_id": "wb_d7e904d2_deals",
+      "source_column": "column_3",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_3",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_3"
+    },
+    {
+      "source_sheet": "Deals",
+      "source_table_id": "wb_d7e904d2_deals",
+      "source_column": "column_4",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_4",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_4"
+    },
+    {
+      "source_sheet": "Deals",
+      "source_table_id": "wb_d7e904d2_deals",
+      "source_column": "column_5",
+      "target_sheet": "Contacts",
+      "target_table_id": "wb_d7e904d2_contacts",
+      "target_column": "column_5",
+      "match_quality": "exact",
+      "confidence": 0.5,
+      "notes": "Matching column name: column_5"
+    }
+  ],
+  "workbook_description": "",
+  "workbook_purpose": "",
+  "s3_base_path": null,
+  "manifest_path": null
+}

@@ -1,0 +1,135 @@
+{
+  "table_id": "wb_d7e904d2_clients",
+  "source_file": "test_multi_table.xlsx",
+  "source_sheet": "Clients",
+  "source_range": "A1:E6",
+  "ingestion_date": "2026-02-25",
+  "row_count": 5,
+  "column_count": 5,
+  "columns": [
+    {
+      "name": "column_1",
+      "data_type": "STRING",
+      "unique_values": 0,
+      "sample_values": [],
+      "null_count": 5,
+      "all_values": [],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": [
+        "Column is entirely null/empty"
+      ]
+    },
+    {
+      "name": "column_2",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Client ID",
+        "C001",
+        "C002",
+        "C003",
+        "C004"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Client ID",
+        "C001",
+        "C002",
+        "C003",
+        "C004"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_3",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Client Name",
+        "Acme Corporation",
+        "Beta Industries",
+        "Gamma Health",
+        "Delta Financial"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Client Name",
+        "Acme Corporation",
+        "Beta Industries",
+        "Gamma Health",
+        "Delta Financial"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_4",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Industry",
+        "Technology",
+        "Manufacturing",
+        "Healthcare",
+        "Finance"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Industry",
+        "Technology",
+        "Manufacturing",
+        "Healthcare",
+        "Finance"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_5",
+      "data_type": "STRING",
+      "unique_values": 4,
+      "sample_values": [
+        "Region",
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Region",
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    }
+  ],
+  "description": "Sheet 'Clients' from test_multi_table.xlsx",
+  "purpose": "Data analysis",
+  "caveats": "No automated analysis",
+  "entities": [],
+  "cross_references": [],
+  "query_patterns": [],
+  "tags_initial": [],
+  "usage_log": [],
+  "tags_learned": [],
+  "query_success_rate": 0.0,
+  "user_satisfaction_rate": 0.0,
+  "total_queries": 0,
+  "learned_mappings": [],
+  "confirmed_relationships": [],
+  "s3_parquet_path": "data/processed/wb_d7e904d2_clients/wb_d7e904d2_clients.parquet",
+  "s3_card_path": null
+}

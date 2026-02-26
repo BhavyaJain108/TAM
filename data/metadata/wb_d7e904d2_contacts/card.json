@@ -1,0 +1,169 @@
+{
+  "table_id": "wb_d7e904d2_contacts",
+  "source_file": "test_multi_table.xlsx",
+  "source_sheet": "Contacts",
+  "source_range": "A1:F7",
+  "ingestion_date": "2026-02-25",
+  "row_count": 6,
+  "column_count": 6,
+  "columns": [
+    {
+      "name": "column_1",
+      "data_type": "STRING",
+      "unique_values": 0,
+      "sample_values": [],
+      "null_count": 6,
+      "all_values": [],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": [
+        "Column is entirely null/empty"
+      ]
+    },
+    {
+      "name": "column_2",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Contact ID",
+        "CT001",
+        "CT002",
+        "CT003",
+        "CT004",
+        "CT005"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Contact ID",
+        "CT001",
+        "CT002",
+        "CT003",
+        "CT004",
+        "CT005"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_3",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Client ID",
+        "C001",
+        "C002",
+        "C003",
+        "C004"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Client ID",
+        "C001",
+        "C002",
+        "C003",
+        "C004"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_4",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Name",
+        "John Smith",
+        "Jane Doe",
+        "Hans Mueller",
+        "Sarah Chen",
+        "Mike Johnson"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Name",
+        "John Smith",
+        "Jane Doe",
+        "Hans Mueller",
+        "Sarah Chen",
+        "Mike Johnson"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_5",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Title",
+        "CEO",
+        "CFO",
+        "Director",
+        "VP Sales",
+        "Partner"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Title",
+        "CEO",
+        "CFO",
+        "Director",
+        "VP Sales",
+        "Partner"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_6",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Email",
+        "john@acme.com",
+        "jane@acme.com",
+        "hans@beta.de",
+        "sarah@gamma.com",
+        "mike@delta.com"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Email",
+        "john@acme.com",
+        "jane@acme.com",
+        "hans@beta.de",
+        "sarah@gamma.com",
+        "mike@delta.com"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    }
+  ],
+  "description": "Sheet 'Contacts' from test_multi_table.xlsx",
+  "purpose": "Data analysis",
+  "caveats": "No automated analysis",
+  "entities": [],
+  "cross_references": [],
+  "query_patterns": [],
+  "tags_initial": [],
+  "usage_log": [],
+  "tags_learned": [],
+  "query_success_rate": 0.0,
+  "user_satisfaction_rate": 0.0,
+  "total_queries": 0,
+  "learned_mappings": [],
+  "confirmed_relationships": [],
+  "s3_parquet_path": "data/processed/wb_d7e904d2_contacts/wb_d7e904d2_contacts.parquet",
+  "s3_card_path": null
+}

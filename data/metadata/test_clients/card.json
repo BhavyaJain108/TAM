@@ -1,0 +1,201 @@
+{
+  "table_id": "test_clients",
+  "source_file": "test_clean.xlsx",
+  "source_sheet": "Clients",
+  "source_range": "B2:G12",
+  "ingestion_date": "2026-02-25",
+  "row_count": 10,
+  "column_count": 6,
+  "columns": [
+    {
+      "name": "Client Name",
+      "data_type": "STRING",
+      "unique_values": 10,
+      "sample_values": [
+        "Acme Corporation",
+        "Beta Industries",
+        "Gamma Health",
+        "Delta Financial",
+        "Epsilon Retail",
+        "Zeta Logistics",
+        "Eta Media",
+        "Theta Energy",
+        "Iota Foods",
+        "Kappa Software"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Acme Corporation",
+        "Beta Industries",
+        "Gamma Health",
+        "Delta Financial",
+        "Epsilon Retail",
+        "Zeta Logistics",
+        "Eta Media",
+        "Theta Energy",
+        "Iota Foods",
+        "Kappa Software"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Industry",
+      "data_type": "STRING",
+      "unique_values": 9,
+      "sample_values": [
+        "Technology",
+        "Manufacturing",
+        "Healthcare",
+        "Finance",
+        "Retail",
+        "Transportation",
+        "Media",
+        "Energy",
+        "Consumer Goods"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Technology",
+        "Manufacturing",
+        "Healthcare",
+        "Finance",
+        "Retail",
+        "Transportation",
+        "Media",
+        "Energy",
+        "Consumer Goods"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Region",
+      "data_type": "STRING",
+      "unique_values": 3,
+      "sample_values": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "North America",
+        "Europe",
+        "Asia Pacific"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Annual Revenue",
+      "data_type": "INTEGER",
+      "unique_values": 10,
+      "sample_values": [
+        "2500000",
+        "1800000",
+        "3200000",
+        "4500000",
+        "900000",
+        "1500000",
+        "2100000",
+        "5800000",
+        "750000",
+        "3400000"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "2500000",
+        "1800000",
+        "3200000",
+        "4500000",
+        "900000",
+        "1500000",
+        "2100000",
+        "5800000",
+        "750000",
+        "3400000"
+      ],
+      "min_value": 750000.0,
+      "max_value": 5800000.0,
+      "mean_value": 2645000.0,
+      "format_warnings": null
+    },
+    {
+      "name": "Status",
+      "data_type": "STRING",
+      "unique_values": 3,
+      "sample_values": [
+        "Active",
+        "Prospect",
+        "Dormant"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Active",
+        "Prospect",
+        "Dormant"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "Start Date",
+      "data_type": "DATE",
+      "unique_values": 10,
+      "sample_values": [
+        "2020-01-15",
+        "2019-06-01",
+        "2021-03-10",
+        "2018-11-20",
+        "2023-02-28",
+        "2020-08-15",
+        "2017-04-01",
+        "2019-09-12",
+        "2024-01-05",
+        "2022-07-18"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "2020-01-15",
+        "2019-06-01",
+        "2021-03-10",
+        "2018-11-20",
+        "2023-02-28",
+        "2020-08-15",
+        "2017-04-01",
+        "2019-09-12",
+        "2024-01-05",
+        "2022-07-18"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    }
+  ],
+  "description": "Description not generated (LLM skipped)",
+  "purpose": "Purpose not generated (LLM skipped)",
+  "caveats": "Caveats not analyzed (LLM skipped)",
+  "entities": [],
+  "cross_references": [],
+  "query_patterns": [],
+  "tags_initial": [],
+  "usage_log": [],
+  "tags_learned": [],
+  "query_success_rate": 0.0,
+  "user_satisfaction_rate": 0.0,
+  "total_queries": 0,
+  "learned_mappings": [],
+  "confirmed_relationships": [],
+  "s3_parquet_path": "data/processed/test_clients/test_clients.parquet",
+  "s3_card_path": null
+}

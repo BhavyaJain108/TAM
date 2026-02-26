@@ -1,0 +1,165 @@
+{
+  "table_id": "wb_d7e904d2_deals",
+  "source_file": "test_multi_table.xlsx",
+  "source_sheet": "Deals",
+  "source_range": "A1:F7",
+  "ingestion_date": "2026-02-25",
+  "row_count": 6,
+  "column_count": 6,
+  "columns": [
+    {
+      "name": "column_1",
+      "data_type": "STRING",
+      "unique_values": 0,
+      "sample_values": [],
+      "null_count": 6,
+      "all_values": [],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": [
+        "Column is entirely null/empty"
+      ]
+    },
+    {
+      "name": "column_2",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Deal ID",
+        "D001",
+        "D002",
+        "D003",
+        "D004",
+        "D005"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Deal ID",
+        "D001",
+        "D002",
+        "D003",
+        "D004",
+        "D005"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_3",
+      "data_type": "STRING",
+      "unique_values": 5,
+      "sample_values": [
+        "Client ID",
+        "C001",
+        "C002",
+        "C003",
+        "C004"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Client ID",
+        "C001",
+        "C002",
+        "C003",
+        "C004"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_4",
+      "data_type": "STRING",
+      "unique_values": 6,
+      "sample_values": [
+        "Deal Name",
+        "Project Alpha",
+        "Project Beta",
+        "Expansion",
+        "Digital Transform",
+        "Advisory"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Deal Name",
+        "Project Alpha",
+        "Project Beta",
+        "Expansion",
+        "Digital Transform",
+        "Advisory"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    },
+    {
+      "name": "column_5",
+      "data_type": "INTEGER",
+      "unique_values": 6,
+      "sample_values": [
+        "Value",
+        "500000",
+        "300000",
+        "750000",
+        "1200000",
+        "200000"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Value",
+        "500000",
+        "300000",
+        "750000",
+        "1200000",
+        "200000"
+      ],
+      "min_value": 200000.0,
+      "max_value": 1200000.0,
+      "mean_value": 590000.0,
+      "format_warnings": null
+    },
+    {
+      "name": "column_6",
+      "data_type": "STRING",
+      "unique_values": 4,
+      "sample_values": [
+        "Stage",
+        "Won",
+        "Active",
+        "Lost"
+      ],
+      "null_count": 0,
+      "all_values": [
+        "Stage",
+        "Won",
+        "Active",
+        "Lost"
+      ],
+      "min_value": null,
+      "max_value": null,
+      "mean_value": null,
+      "format_warnings": null
+    }
+  ],
+  "description": "Sheet 'Deals' from test_multi_table.xlsx",
+  "purpose": "Data analysis",
+  "caveats": "No automated analysis",
+  "entities": [],
+  "cross_references": [],
+  "query_patterns": [],
+  "tags_initial": [],
+  "usage_log": [],
+  "tags_learned": [],
+  "query_success_rate": 0.0,
+  "user_satisfaction_rate": 0.0,
+  "total_queries": 0,
+  "learned_mappings": [],
+  "confirmed_relationships": [],
+  "s3_parquet_path": null,
+  "s3_card_path": null
+}
