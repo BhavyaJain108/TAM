@@ -5,42 +5,39 @@
 # Format:
 #   file_key:                    # Unique identifier for this file
 #     s3_key: "path/in/bucket"   # S3 key in raw bucket
-#     table_id: "my_table"       # ID for the resulting table (optional - auto-generated if not set)
-#     sheets:                    # Sheet configurations
-#       - name: "Sheet1"         # Sheet name
-#         start_cell: "A1"       # Top-left cell of data
-#         end_cell: "Z100"       # Bottom-right cell of data (optional - auto-detect if not set)
-#         table_id: "sheet1_tbl" # Override table_id for this sheet (optional)
-#     skip_llm: false            # Skip LLM generation (optional, default false)
-#     skip_storage: false        # Skip saving to S3/Athena (optional, default false)
+#     tables:                    # List of tables to extract
+#       - sheet: "Sheet1"        # Sheet name containing this table
+#         table_id: "my_table"   # ID for the resulting table
+#         start_cell: "A1"       # Top-left cell of data (headers)
+#         end_cell: "Z100"       # Bottom-right cell (null = auto-detect)
+#
+# Multiple tables on same sheet:
+#   multi_table_file:
+#     s3_key: "report.xlsx"
+#     tables:
+#       - sheet: "Data"
+#         table_id: "customers"
+#         start_cell: "A1"
+#         end_cell: "K50"
+#       - sheet: "Data"          # Same sheet, different region
+#         table_id: "orders"
+#         start_cell: "A55"
+#         end_cell: "M150"
+#       - sheet: "Summary"       # Different sheet
+#         table_id: "summary"
+#         start_cell: "B2"
+#         end_cell: null
 
-# Example configurations:
+# Example configuration:
 # -----------------------
 
 financial_sample:
   s3_key: "financial_sample.xlsx"
-  table_id: "financial_data"
-  sheets:
-    - name: "Sheet1"
+  tables:
+    - sheet: "Sheet1"
+      table_id: "financial_data"
       start_cell: "A1"
       end_cell: null  # Auto-detect end
-
-# Multi-sheet workbook example:
-# client_data:
-#   s3_key: "clients/q1_report.xlsx"
-#   sheets:
-#     - name: "Clients"
-#       start_cell: "B2"
-#       end_cell: "H50"
-#       table_id: "clients_q1"
-#     - name: "Deals"
-#       start_cell: "A1"
-#       end_cell: null
-#       table_id: "deals_q1"
-#     - name: "Contacts"
-#       start_cell: "A1"
-#       end_cell: "F100"
-#       table_id: "contacts_q1"
 
 # Add your configurations below:
 # ------------------------------

@@ -62,7 +62,7 @@ def process_config(
     skip_llm: bool = False,
     skip_storage: bool = False,
 ) -> list[dict]:
-    """Process a single configuration (may have multiple sheets)."""
+    """Process a single configuration (may have multiple tables across sheets)."""
     results = []
 
     s3_key = config['s3_key']
@@ -73,21 +73,24 @@ def process_config(
         print(f"  Downloading: s3://{settings.s3_bucket_raw}/{s3_key}")
     download_from_s3(settings.s3_bucket_raw, s3_key, local_path, settings.aws_region)
 
-    # Process each sheet
-    sheets_config = config.get('sheets', [])
-    if not sheets_config:
-        # If no sheets specified, process all sheets
+    # Process each table (can be multiple tables per sheet)
+    tables_config = config.get('tables', [])
+    if not tables_config:
+        # If no tables specified, auto-detect one table per sheet
         sheet_names = list_sheets(str(local_path))
-        sheets_config = [{'name': name, 'start_cell': 'A1', 'end_cell': None} for name in sheet_names]
+        tables_config = [
+            {'sheet': name, 'table_id': f"{config_name}_{name}".lower().replace(' ', '_'), 'start_cell': 'A1', 'end_cell': None}
+            for name in sheet_names
+        ]
 
-    for sheet_config in sheets_config:
-        sheet_name = sheet_config['name']
-        start_cell = sheet_config.get('start_cell', 'A1')
-        end_cell = sheet_config.get('end_cell')
-        table_id = sheet_config.get('table_id') or config.get('table_id') or f"{config_name}_{sheet_name}".lower().replace(' ', '_')
+    for table_config in tables_config:
+        sheet_name = table_config['sheet']
+        table_id = table_config.get('table_id') or f"{config_name}_{sheet_name}".lower().replace(' ', '_')
+        start_cell = table_config.get('start_cell', 'A1')
+        end_cell = table_config.get('end_cell')
 
         if verbose:
-            print(f"  Processing sheet: {sheet_name} ({start_cell} -> {end_cell or 'auto'})")
+            print(f"  Processing table: {table_id} (sheet: {sheet_name}, {start_cell} -> {end_cell or 'auto'})")
 
         try:
             card = build_card(
