@@ -108,8 +108,8 @@ def process_config(
                 'config': config_name,
                 'sheet': sheet_name,
                 'table_id': card.table_id,
-                'rows': card.data_quality.row_count,
-                'columns': card.data_quality.column_count,
+                'rows': card.row_count,
+                'columns': card.column_count,
                 'status': 'success',
                 'error': None,
             })
