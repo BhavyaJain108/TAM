@@ -1,0 +1,47 @@
+# Table Configurations
+# ====================
+# Define coordinates and settings for each Excel file you want to ingest.
+#
+# Format:
+#   file_key:                    # Unique identifier for this file
+#     s3_key: "path/in/bucket"   # S3 key in raw bucket
+#     table_id: "my_table"       # ID for the resulting table (optional - auto-generated if not set)
+#     sheets:                    # Sheet configurations
+#       - name: "Sheet1"         # Sheet name
+#         start_cell: "A1"       # Top-left cell of data
+#         end_cell: "Z100"       # Bottom-right cell of data (optional - auto-detect if not set)
+#         table_id: "sheet1_tbl" # Override table_id for this sheet (optional)
+#     skip_llm: false            # Skip LLM generation (optional, default false)
+#     skip_storage: false        # Skip saving to S3/Athena (optional, default false)
+
+# Example configurations:
+# -----------------------
+
+financial_sample:
+  s3_key: "financial_sample.xlsx"
+  table_id: "financial_data"
+  sheets:
+    - name: "Sheet1"
+      start_cell: "A1"
+      end_cell: null  # Auto-detect end
+
+# Multi-sheet workbook example:
+# client_data:
+#   s3_key: "clients/q1_report.xlsx"
+#   sheets:
+#     - name: "Clients"
+#       start_cell: "B2"
+#       end_cell: "H50"
+#       table_id: "clients_q1"
+#     - name: "Deals"
+#       start_cell: "A1"
+#       end_cell: null
+#       table_id: "deals_q1"
+#     - name: "Contacts"
+#       start_cell: "A1"
+#       end_cell: "F100"
+#       table_id: "contacts_q1"
+
+# Add your configurations below:
+# ------------------------------
+
